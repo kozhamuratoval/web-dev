@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Button Function</title>
+</head>
+<body>
+
+<button onclick="myFunction()">Click Me</button>
+
+<script>
+  function myFunction() {
+    alert("Button was clicked!");
+  }
+</script>
+
+</body>
+</html>
+<button onclick="changeText()">Click Me</button>
+
+<p id="text">Hello!</p>
+
+<script>
+  function changeText() {
+    document.getElementById("text").innerText = "Button Clicked!";
+  }
+</script>
+<button onclick="changeColor()">Change Color</button>
+
+<script>
+  function changeColor() {
+    document.body.style.backgroundColor = "lightblue";
+  }
+</script>
