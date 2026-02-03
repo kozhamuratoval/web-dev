@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook – log in or sign up</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Helvetica, Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f0f2f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: #1c1e21;
+        }
+
+        .main-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            max-width: 1000px;
+            padding: 20px;
+        }
+
+        .left-content {
+            width: 50%;
+            padding-right: 32px;
+            margin-bottom: 100px;
+        }
+
+        .facebook-logo {
+            font-size: 60px;
+            font-weight: bold;
+            color: #1877f2;
+            letter-spacing: -2px;
+            margin-bottom: 10px;
+        }
+
+        .left-content p {
+            font-size: 28px;
+            line-height: 32px;
+            width: 500px;
+        }
+
+        .right-content {
+            width: 400px;
+        }
+
+        .login-card {
+            background: #fff;
+            padding: 16px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        input {
+            width: 100%;
+            padding: 14px 16px;
+            margin-bottom: 12px;
+            border: 1px solid #dddfe2;
+            border-radius: 6px;
+            font-size: 17px;
+            outline: none;
+        }
+
+        input:focus {
+            border-color: #1877f2;
+            box-shadow: 0 0 0 2px #e7f3ff;
+        }
+
+        .login-btn {
+            width: 100%;
+            background-color: #1877f2;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            font-size: 20px;
+            font-weight: bold;
+            padding: 10px;
+            cursor: pointer;
+            margin-bottom: 15px;
+        }
+
+        .login-btn:hover {
+            background-color: #166fe5;
+        }
+
+        .forgot-password {
+            color: #1877f2;
+            font-size: 14px;
+            text-decoration: none;
+            display: block;
+            margin-bottom: 20px;
+        }
+
+        .forgot-password:hover {
+            text-decoration: underline;
+        }
+
+        hr {
+            border: none;
+            border-top: 1px solid #dadde1;
+            margin-bottom: 20px;
+        }
+
+        .create-btn {
+            background-color: #42b72a;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            font-size: 17px;
+            font-weight: bold;
+            padding: 0 16px;
+            line-height: 48px;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .create-btn:hover {
+            background-color: #36a420;
+        }
+
+        .footer-text {
+            margin-top: 28px;
+            font-size: 14px;
+            color: #1c1e21;
+        }
+
+        .footer-text a {
+            text-decoration: none;
+            font-weight: bold;
+            color: #1c1e21;
+        }
+
+        .footer-text a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 900px) {
+            .main-container {
+                flex-direction: column;
+                text-align: center;
+            }
+            .left-content {
+                width: 100%;
+                padding: 0;
+                margin-bottom: 40px;
+            }
+            .left-content p {
+                width: 100%;
+                font-size: 24px;
+            }
+            .right-content {
+                width: 100%;
+                max-width: 400px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="main-container">
+        <div class="left-content">
+            <div class="facebook-logo">facebook</div>
+            <p>Facebook помогает вам всегда оставаться на связи и общаться со своими знакомыми.</p>
+        </div>
+
+        <div class="right-content">
+            <div class="login-card">
+                <form>
+                    <input type="text" placeholder="Электронный адрес или номер телефона" required>
+                    <input type="password" placeholder="Пароль" required>
+                    <button type="submit" class="login-btn">Вход</button>
+                    <a href="#" class="forgot-password">Забыли пароль?</a>
+                    <hr>
+                    <a href="#" class="create-btn">Создать новый аккаунт</a>
+                </form>
+            </div>
+            <div class="footer-text">
+                <p><a href="#">Создать Страницу</a> знаменитости, музыкальной группы или компании.</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
