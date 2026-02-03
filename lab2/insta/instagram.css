@@ -1,0 +1,101 @@
+body {
+  background: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  gap: 70px;
+}
+
+.left img {
+  width: 550px;
+  max-width: 100%;
+}
+
+.right {
+  width: 400px;
+}
+
+.card {
+  background: #fff;
+  border: 1px solid #dbdbdb;
+  padding: 50px;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.card input {
+  width: 100%;
+  padding: 11px;
+  margin-bottom: 15px;
+  background: #fafafa;
+  border: 1px solid #dbdbdb;
+  border-radius: 7px;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+.login-btn {
+  width: 100%;
+  padding: 11px;
+  margin-top: 10px;
+  background: #0095f6;
+  color: #fff;  
+  border: none;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+
+.password-reset {
+  color: #575859;
+  margin-top: 15px;
+  font-size:15px
+}
+
+.facebook-login {
+  display: inline-block;
+  color: #242121;
+  font-size: 14px;
+  margin-top: 50px;
+  width: 100%;
+  padding: 4px;
+  margin-bottom: 10px;
+  background: #fafafa;
+  border: 1px solid #dbdbdb;
+  border-radius: 7px;
+  text-decoration: none;
+}
+
+.new-account {
+  display: block;
+  font-size: 14px;
+  color: #1d567c;
+  text-decoration: none;
+  width: 100%;
+  padding: 4px;
+  background: #fafafa;
+  border: 1px solid #2f44a4;
+  border-radius: 7px;
+}
+
+.text {
+  text-align: left;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 900px) {
+  .left {
+    display: none;
+  }
+  .container {
+    gap: 0;
+  }
+}
+
