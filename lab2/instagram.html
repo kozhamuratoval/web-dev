@@ -19,66 +19,53 @@
     .container {
       display: flex;
       align-items: center;
-      gap: 60px;
+      gap: 70px;
     }
 
     .left img {
       width: 550px;
       max-width: 100%;
-      display: block;
     }
 
     .right {
-      width: 350px;
-      max-width: 100%;
+      width: 400px;
     }
 
     .card {
       background: #fff;
       border: 1px solid #dbdbdb;
-      padding: 40px;
+      padding: 50px;
       text-align: center;
       margin-bottom: 15px;
     }
 
-    .logo {
-      font-family: cursive;
-      font-size: 40px;
-      margin-bottom: 30px;
-      font-weight: 500;
-    }
-
     .card input {
       width: 100%;
-      padding: 10px;
-      margin-bottom: 8px;
+      padding: 11px;
+      margin-bottom: 15px;
       background: #fafafa;
       border: 1px solid #dbdbdb;
-      border-radius: 4px;
-      font-size: 13px;
-      outline: none;
-    }
+      border-radius: 7px;
+      font-size: 14px;
+            box-sizing: border-box;
 
-    .card input:focus {
-      border-color: #bdbdbd;
-    }
+      }
 
     .login-btn {
       width: 100%;
-      padding: 9px;
+      padding: 11px;
       margin-top: 10px;
       background: #0095f6;
-      color: #fff;
+      color: #fff;  
       border: none;
-      border-radius: 8px;
-      font-weight: bold;
-      cursor: pointer;
+      border-radius: 10px;
+      box-sizing: border-box;
     }
-
-    .login-btn:hover {
-      background: #1877f2;
+    .password-reset {
+      color: #575859;
+      margin-top: 15px;
+      font-size:15px
     }
-
     .divider {
       display: flex;
       align-items: center;
@@ -87,49 +74,46 @@
       font-size: 12px;
       font-weight: 600;
     }
-
     .divider span {
-      flex: 1;
+      flex: 10;
       height: 1px;
-      background: #dbdbdb;
+      background: #7d7d7d;
     }
 
     .divider p {
-      margin: 0 10px;
+      margin: 10px;
     }
 
     .facebook-login {
       display: inline-block;
-      color: #385185;
+      color: #242121;
       font-weight: bold;
       font-size: 14px;
-      text-decoration: none;
-      margin-top: 5px;
+      margin-top: 11px;
+      width: 100%;
+      padding: 4px;
+      margin-bottom: 10px;
+      background: #fafafa;
+      border: 1px solid #dbdbdb;
+      border-radius: 7px;
     }
 
     .forgot {
       display: block;
-      margin-top: 15px;
-      font-size: 12px;
-      color: #00376b;
+      font-size: 4x;
+      color: #1d567c;
       text-decoration: none;
+      width: 100%;
+      padding: 4px;
+      background: #fafafa;
+      border: 1px solid #2f44a4;
+      border-radius: 7px;
+      }
+    .text {
+      text-align: left;
+      font-size: 16px;
+      margin-bottom: 20px;
     }
-
-    .signup-card {
-      background: #fff;
-      border: 1px solid #dbdbdb;
-      padding: 20px;
-      text-align: center;
-      font-size: 14px;
-    }
-
-    .signup-card a {
-      color: #0095f6;
-      font-weight: bold;
-      text-decoration: none;
-      margin-left: 4px;
-    }
-
     @media (max-width: 900px) {
       .left {
         display: none;
@@ -148,17 +132,17 @@
     <div class="left">
       <img src="/Users/liana/Desktop/web-dev/lab2/pic.png" alt="pic">
     </div>
-
     <div class="right">
       <div class="card">
-        
-
+      
+      
         <form>
+          <div class ="text">Войдите в Instagram</div>
           <input type="text" placeholder="Phone number, username, or email" required>
           <input type="password" placeholder="Password" required>
           <button class="login-btn" type="submit">Log in</button>
         </form>
-
+        <div class="password-reset">Забыли пароль?</div>
         <div class="divider">
           <span></span>
           <p>OR</p>
@@ -166,13 +150,9 @@
         </div>
 
         <a class="facebook-login" href="#">Log in with Facebook</a>
-        <a class="forgot" href="#">Forgot password?</a>
+        <a class="forgot" href="#">Создать новый аккаунт</a>
       </div>
 
-      <div class="signup-card">
-        Don't have an account?
-        <a href="#">Sign up</a>
-      </div>
     </div>
 
   </div>
