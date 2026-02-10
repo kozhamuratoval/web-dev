@@ -1,0 +1,2 @@
+alert('a');
+'use strict';
