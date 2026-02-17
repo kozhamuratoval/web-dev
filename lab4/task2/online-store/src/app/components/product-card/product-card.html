@@ -1,0 +1,28 @@
+<div class="card">
+  <img [src]="product.image[0]" [alt]="product.name">
+
+  <h3>{{ product.name }}</h3>
+
+  <p>{{ product.description }}</p>
+
+  <div class="price">
+    {{ product.price }} kzt
+  </div>
+
+  <div class="rating">
+    Rating: {{ product.rating }}
+  </div>
+
+  <a [href]="product.link" >
+    View on Amazon
+  </a>
+
+  <div>
+    <img class='icon' [src]="'/assets/icon.png'">
+    <button class="tel" (click)="shareTelegram()">Telegram</button>
+  </div>
+  <div>
+    <img class="icon" [src]="'/assets/image.png'">
+    <button class="whatsapp" (click)="shareWhatsapp()">WhatsApp</button>
+  </div>
+</div>
