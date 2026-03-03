@@ -1,0 +1,77 @@
+.detail-container {
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+.back-btn {
+  padding: 7px 12px;
+  border: 1px solid #2f5f9f;
+  background: #dbe9ff;
+  color: #12325b;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.back-btn:hover {
+  background: #bcd6ff;
+}
+
+.album-detail {
+  border: 1px solid #2f5f9f;
+  background: #fff;
+  padding: 16px;
+}
+
+.album-detail h2 {
+  margin: 0 0 14px;
+  font-size: 28px;
+  color: #1f4f8f;
+}
+
+.edit-section {
+  margin: 12px 0;
+}
+
+.edit-section label {
+  display: block;
+  margin-bottom: 5px;
+  color: #1f4f8f;
+  font-weight: 700;
+}
+
+.edit-section input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #2f5f9f;
+  font-size: 15px;
+}
+
+.edit-section input:focus {
+  outline: 1px solid #1f4f8f;
+}
+
+.actions {
+  display: flex;
+  gap: 8px;
+  margin-top: 12px;
+  flex-wrap: wrap;
+}
+
+.save-btn, .photos-btn {
+  padding: 7px 12px;
+  border: 1px solid #2f5f9f;
+  background: #dbe9ff;
+  color: #12325b;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.save-btn:hover:not(:disabled),
+.photos-btn:hover {
+  background: #bcd6ff;
+}
+
+.save-btn:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}

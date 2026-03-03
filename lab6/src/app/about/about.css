@@ -1,0 +1,21 @@
+.about-container {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.about-container h2 {
+  margin: 0 0 12px;
+  font-size: 28px;
+  color: #1f4f8f;
+}
+
+.about-box {
+  background: #fff;
+  border: 1px solid #2f5f9f;
+  padding: 16px;
+}
+
+.about-box p {
+  margin: 8px 0;
+  font-size: 16px;
+}
